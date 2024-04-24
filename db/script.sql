@@ -41,3 +41,7 @@ BEGIN
     RETURN idade;
 END;
 $$ LANGUAGE plpgsql;
+
+//criação do insert
+
+INSERT INTO usuario (nome, sobrenome, datanascimento, email, idade, signo) VALUES ('Marina', 'Morais', '2006-04-24', 'marinamorais@gmail.com', calcula_idade('2006-04-24'), calcula_signo('2006-04-24'));
